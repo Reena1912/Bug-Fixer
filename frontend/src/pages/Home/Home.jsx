@@ -39,7 +39,7 @@ export default function Home({ darkMode, toggleTheme }) {
         </button>
         
         <Features />
-
+       
 
  {/* Language Support Section */}
  <motion.section
@@ -97,6 +97,7 @@ export default function Home({ darkMode, toggleTheme }) {
           </div>
         </div>
       </motion.section>
+      
 
        {/* Testimonials Section (Optional) */}
        <motion.section
@@ -119,6 +120,7 @@ export default function Home({ darkMode, toggleTheme }) {
         </div>
       </motion.section>
 
+    
         
       </div>
     </div>

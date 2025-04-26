@@ -8,7 +8,7 @@ export default function Navbar({ darkMode, toggleTheme }) {
       <Link to="/" className="logo">CodeFixer</Link>
       <div className="nav-links">
         <Link to="/review">Review</Link>
-        <Link to="#use-cases">Resources</Link>
+        <Link to="/use-cases" className="nav-link">Use Cases</Link>
         <Link to="#pricing">Pricing</Link>
         <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} />
       </div>
