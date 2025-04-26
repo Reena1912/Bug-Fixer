@@ -1,0 +1,27 @@
+/* Add these styles to your CSS */
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555; /* Default light mode color */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+  }
+  
+  .theme-toggle:hover {
+    color: #4f46e5; /* Hover color in light mode */
+    background-color: rgba(79, 70, 229, 0.1);
+  }
+  
+  body.dark-mode .theme-toggle {
+    color: #d1d5db; /* Text color in dark mode */
+  }
+  
+  body.dark-mode .theme-toggle:hover {
+    color: #818cf8; /* Hover color in dark mode */
+    background-color: rgba(129, 140, 248, 0.1);
+  }
+  

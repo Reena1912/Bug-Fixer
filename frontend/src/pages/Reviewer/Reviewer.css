@@ -1,0 +1,314 @@
+/* Light Theme Specific Styles */
+.app-container.light {
+    background-color: #f8fafc;
+    color: #1e293b;
+  }
+  
+  .app-container.light .code,
+  .app-container.light .review-content,
+  .app-container.light .history-section {
+    border: 2px solid #000000;
+  }
+  
+  .app-container.light .code {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .app-container.light .review-content {
+    background-color: #ffffff;
+    color: #1e293b;
+  }
+  
+  .app-container.light .history-section {
+    background-color: #ffffff;
+  }
+  
+  .app-container.light .history-code {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark Theme Styles - Enhanced for better visibility */
+  .app-container.dark {
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+  
+  .app-container.dark .editor-title,
+  .app-container.dark .review-header h3,
+  .app-container.dark .section-header h2,
+  .app-container.dark .history-item summary,
+  .app-container.dark .empty-state p,
+  .app-container.dark .empty-history p {
+    color: #f8fafc;
+  }
+  
+  .app-container.dark .code {
+    background-color: #1e1e1e;
+    border-color: #334155;
+    color: #f8fafc;
+  }
+  
+  .app-container.dark .review-content {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #e2e8f0;
+  }
+  
+  .app-container.dark .history-section {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+  
+  .app-container.dark .history-code {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+  }
+  
+  .app-container.dark .history-review {
+    color: #e2e8f0;
+  }
+  
+  .app-container.dark .timestamp {
+    color: #94a3b8;
+  }
+  
+  .app-container.dark .copy-btn {
+    color: #e2e8f0;
+    border-color: #64748b;
+  }
+  
+  .app-container.dark .copy-btn:hover {
+    background-color: rgba(100, 116, 139, 0.2);
+  }
+  
+  .app-container.dark .history-item {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+  
+  .app-container.dark .history-item summary {
+    background-color: #1e293b;
+    color: #f8fafc;
+  }
+  
+  /* Markdown specific styles for dark mode */
+  .app-container.dark .review-content pre {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+  }
+  
+  .app-container.dark .review-content code {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+  }
+  
+  /* Base Styles */
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Editor Section */
+  .main {
+    flex: 1;
+    display: flex;
+    padding: 2rem 5%;
+    gap: 2rem;
+  }
+  
+  .left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    gap: 1rem;
+  }
+  
+  /* Editor Header */
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .editor-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .header-icon {
+    font-size: 1.2rem;
+  }
+  
+  /* Code Editor */
+  .code {
+    flex: 1;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Review Section */
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .review-header h3 {
+    font-weight: 600;
+  }
+  
+  .review-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Buttons */
+  .review-button {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #1e293b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .review-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-button.loading {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .copy-btn {
+    background: none;
+    border: 1px solid #e1e7ef;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.2s;
+  }
+  
+  .copy-btn:hover {
+    background: #f1f5f9;
+  }
+  
+  /* History Section */
+  .history-section {
+    padding: 2rem 5%;
+    border-radius: 12px;
+    margin: 0 5% 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .history-item {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .history-item summary {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .timestamp {
+    font-size: 0.85rem;
+  }
+  
+  .history-content {
+    padding: 0 1rem 1rem;
+  }
+  
+  .history-code {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .history-code pre {
+    white-space: pre-wrap;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .history-review {
+    padding: 1rem;
+    border-top: 1px solid #e1e7ef;
+  }
+  
+  .empty-history {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+    
+    .history-section {
+      padding: 1.5rem;
+      margin: 0 1.5rem 1.5rem;
+    }
+  }
