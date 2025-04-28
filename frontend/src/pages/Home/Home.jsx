@@ -99,7 +99,7 @@ export default function Home({ darkMode, toggleTheme }) {
       </motion.section>
       
 
-       {/* Testimonials Section (Optional) */}
+       {/* Testimonials Section */}
        <motion.section
         className="testimonials"
         initial={{ opacity: 0 }}
