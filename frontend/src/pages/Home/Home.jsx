@@ -208,9 +208,15 @@ export default function Home({ darkMode, toggleTheme }) {
         </motion.div>
       </motion.section>
       
+<<<<<<< HEAD
       {/* Testimonials Section */}
       <div className="section-spacer"></div>
       <motion.section
+=======
+
+       {/* Testimonials Section */}
+       <motion.section
+>>>>>>> df074ed5385a9b14eaed9a4d909b6ffe99f74f7e
         className="testimonials"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
