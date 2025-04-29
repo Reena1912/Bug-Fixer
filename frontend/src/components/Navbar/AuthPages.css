@@ -1,0 +1,289 @@
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .auth-decoration {
+    flex: 1;
+    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .code-bubble {
+    background-color: rgba(187, 134, 252, 0.1);
+    border: 1px solid #bb86fc;
+    color: #bb86fc;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    margin: 0.5rem 0;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .bubble-1 {
+    align-self: flex-start;
+    margin-left: 10%;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .bubble-2 {
+    animation: float 5s ease-in-out infinite reverse;
+  }
+  
+  .bubble-3 {
+    align-self: flex-end;
+    margin-right: 10%;
+    animation: float 7s ease-in-out infinite;
+  }
+  /* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .social-icon.google {
+    color: #DB4437;
+  }
+  
+  .social-icon.facebook {
+    color: #4267B2;
+  }
+  
+  .social-icon.github {
+    color: #333;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .social-icons {
+      gap: 1rem;
+    }
+    
+    .social-icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .auth-form {
+    flex: 1;
+    max-width: 500px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e1e1e;
+  }
+  
+  .auth-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #bb86fc;
+  }
+  
+  .auth-subtitle {
+    color: #a7b3bc;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    color: #bb86fc;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 8px;
+    border: 1px solid #2c2c2c;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+    border-color: #bb86fc;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #a7b3bc;
+  }
+  
+  .remember-me a {
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  
+  .forgot-password {
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  
+  .auth-button {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #a56efb;
+  }
+  
+  .social-login {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .divider {
+    position: relative;
+    color: #a7b3bc;
+    margin: 1.5rem 0;
+  }
+  
+  .divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #2c2c2c;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon.github {
+    color: #333;
+  }
+  
+  .social-icon.google {
+    color: #DB4437;
+  }
+  
+  .social-icon.twitter {
+    color: #1DA1F2;
+  }
+  
+  .auth-footer {
+    text-align: center;
+    color: #a7b3bc;
+  }
+  
+  .auth-link {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #bb86fc;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .auth-container {
+      flex-direction: column;
+    }
+    
+    .auth-decoration {
+      padding: 2rem;
+      min-height: 200px;
+    }
+    
+    .auth-form {
+      padding: 2rem;
+    }
+    
+    .code-bubble {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
