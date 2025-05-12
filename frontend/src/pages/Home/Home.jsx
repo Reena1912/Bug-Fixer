@@ -75,7 +75,6 @@ export default function Home({ darkMode, toggleTheme }) {
         </div>
       </motion.section>
 
-      {/* Features Section with proper spacing */}
       <div className="section-spacer"></div>
       <Features />
 
